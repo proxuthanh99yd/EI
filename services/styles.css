@@ -1,0 +1,78 @@
+.services {
+  padding: 3rem;
+  background: linear-gradient(to bottom, #56c070, #214f91);
+}
+.services__heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.services__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.services__item {
+  max-width: 28.5rem;
+  flex: 1;
+  background-color: #f6faff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.services__item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.services__icon {
+  margin-bottom: 1rem;
+}
+.services__icon--study-abroad {
+  background-image: url("/path/to/study-abroad-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.services__icon--language-training {
+  background-image: url("/path/to/language-training-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.services__icon--manpower {
+  background-image: url("/path/to/manpower-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.services__item-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0c2246;
+  margin-bottom: 1rem;
+}
+.services__item-description {
+  font-size: 1rem;
+  color: #697a94;
+  margin-bottom: 1.5rem;
+}
+.services__link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+.services__link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */
