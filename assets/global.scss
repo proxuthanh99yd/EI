@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif !important;
+}
+:root {
+    --init-font-size: 1vw;
+    /* Greyscale */
+    --grey-0: #ffffff;
+    --grey-50: #efefef;
+    --grey-100: #cccccc;
+    --grey-200: #b4b4b4;
+    --grey-300: #929292;
+    --grey-400: #7d7d7d;
+    --grey-500: #5c5c5c;
+    --grey-600: #545454;
+    --grey-700: #414141;
+    --grey-800: #333333;
+    --grey-900: #272727;
+
+    /* Red */
+    --red-50: #fbe8e9;
+    --red-100: #f2b9bb;
+    --red-200: #ec979a;
+    --red-300: #e3676c;
+    --red-400: #dd4950;
+    --red-500: #d51c24;
+    --red-600: #c21921;
+    --red-700: #97141a;
+    --red-800: #750f14;
+    --red-900: #590c0f;
+
+    /* Green */
+    --green-50: #e6f6ee;
+    --green-100: #b0e3c9;
+    --green-200: #8ad6af;
+    --green-300: #54c38a;
+    --green-400: #33b873;
+    --green-500: #00a650;
+    --green-600: #009749;
+    --green-700: #007639;
+    --green-800: #005b2c;
+    --green-900: #004622;
+
+    /* Green (success) */
+    --success-50: #e7fbed;
+    --success-100: #b5f1c7;
+    --success-200: #91eaab;
+    --success-300: #5ee185;
+    --success-400: #3fdb6d;
+    --success-500: #0fd249;
+    --success-600: #0ebf42;
+    --success-700: #0b9534;
+    --success-800: #087428;
+    --success-900: #06581f;
+
+    /* Yellow (warning) */
+    --warning-50: #fdf7e6;
+    --warning-100: #f8e5b2;
+    --warning-200: #f5d98d;
+    --warning-300: #f0c759;
+    --warning-400: #edbd39;
+    --warning-500: #e9ac07;
+    --warning-600: #d49d06;
+    --warning-700: #a57a05;
+    --warning-800: #805f04;
+    --warning-900: #624803;
+
+    /* Red (error) */
+    --error-50: #fce8e6;
+    --error-100: #f5b7b0;
+    --error-200: #f1948a;
+    --error-300: #ea6354;
+    --error-400: #e64533;
+    --error-500: #e01600;
+    --error-500: #e01600;
+    --error-600: #cc1400;
+    --error-700: #9f1000;
+    --error-800: #7b0c00;
+    --error-900: #5e0900;
+
+    /* Background (Example) */
+    ---white-0: #ffffff;
+    ---white-100: #fafafa;
+    ---white-200: #eaeaea;
+    ---white-300: #f5f5f5;
+    ---white-500: #f0f0f0;
+    ---white-500-1: #eaeaea;
+
+    /* linear */
+    --G1: linear-gradient(180deg, #3bbcb7 0%, #c8fffd 100%);
+    --G2: linear-gradient(180deg, #3bbcb7 0%, #8cfffb 100%);
+
+    /* spacing */
+
+    --1: 0.0625rem;
+    --2: 0.125rem;
+    --3: 0.1875rem;
+    --4: 0.25rem;
+    --5: 0.3125rem;
+    --6: 0.375rem;
+    --7: 0.4375rem;
+    --8: 0.5rem;
+    --9: 0.5625rem;
+    --10: 0.625rem;
+    --11: 0.6875rem;
+    --12: 0.75rem;
+    --13: 0.8125rem;
+    --14: 0.875rem;
+    --15: 0.9375rem;
+    --16: 1rem;
+    --17: 1.0625rem;
+    --18: 1.125rem;
+    --19: 1.1875rem;
+    --20: 1.25rem;
+    --21: 1.3125rem;
+    --22: 1.375rem;
+    --23: 1.4375rem;
+    --24: 1.5rem;
+    --25: 1.5625rem;
+    --26: 1.625rem;
+    --27: 1.6875rem;
+    --28: 1.75rem;
+    --29: 1.8125rem;
+    --30: 1.875rem;
+    --31: 1.9375rem;
+    --32: 2rem;
+    --33: 2.0625rem;
+    --34: 2.125rem;
+    --35: 2.1875rem;
+    --36: 2.25rem;
+    --37: 2.3125rem;
+    --38: 2.375rem;
+    --39: 2.4375rem;
+    --40: 2.5rem;
+    --41: 2.5625rem;
+    --42: 2.625rem;
+    --43: 2.6875rem;
+    --44: 2.75rem;
+    --45: 2.8125rem;
+    --46: 2.875rem;
+    --47: 2.9375rem;
+    --48: 3rem;
+    --49: 3.0625rem;
+    --50: 3.125rem;
+    --51: 3.1875rem;
+    --52: 3.25rem;
+    --53: 3.3125rem;
+    --54: 3.375rem;
+    --55: 3.4375rem;
+    --56: 3.5rem;
+    --57: 3.5625rem;
+    --58: 3.625rem;
+    --59: 3.6875rem;
+    --60: 3.75rem;
+    --61: 3.8125rem;
+    --62: 3.875rem;
+    --63: 3.9375rem;
+    --64: 4rem;
+    --65: 4.0625rem;
+    --66: 4.125rem;
+    --67: 4.1875rem;
+    --68: 4.25rem;
+    --69: 4.3125rem;
+    --70: 4.375rem;
+    --71: 4.4375rem;
+    --72: 4.5rem;
+    --73: 4.5625rem;
+    --74: 4.625rem;
+    --75: 4.6875rem;
+    --76: 4.75rem;
+    --77: 4.8125rem;
+    --78: 4.875rem;
+    --79: 4.9375rem;
+    --80: 5rem;
+    --81: 5.0625rem;
+    --82: 5.125rem;
+    --83: 5.1875rem;
+    --84: 5.25rem;
+    --85: 5.3125rem;
+    --86: 5.375rem;
+    --87: 5.4375rem;
+    --88: 5.5rem;
+    --89: 5.5625rem;
+    --90: 5.625rem;
+    --91: 5.6875rem;
+    --92: 5.75rem;
+    --93: 5.8125rem;
+    --94: 5.875rem;
+    --95: 5.9375rem;
+    --96: 6rem;
+    --97: 6.0625rem;
+    --98: 6.125rem;
+    --99: 6.1875rem;
+    --100: 6.25rem;
+}
+html {
+    font-size: var(--init-font-size);
+}
+
+.btn {
+    font-size: var(--16);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.01rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    border-radius: var(--32, 2rem);
+    transition: 0.3s ease;
+    color: var(---white-0);
+    padding: var(--12) var(--16) var(--12) var(--24);
+    &--l {
+        padding: var(--16) var(--16) var(--16) var(--24);
+    }
+    &__primary {
+        background: linear-gradient(90deg, rgba(99, 161, 71, 1) 0%, rgba(99, 161, 71, 1) 100%);
+        color: var(---white-0);
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: var(--1);
+            height: var(--17);
+            background: rgba(255, 255, 255, 0.1);
+            top: 50%;
+            transform: translateY(-50%);
+            right: var(--48);
+        }
+        &:hover {
+            background: linear-gradient(
+                91deg,
+                #282d93 1.33%,
+                #2d7675 33.95%,
+                #509161 77.44%,
+                #63a056 120.93%,
+                #75ae4c 164.42%,
+                #7fb546 207.91%
+            );
+            box-shadow:
+                var(--34) var(--45) var(--16) 0px rgba(14, 38, 108, 0),
+                var(--22) var(--29) var(--15) 0px rgba(14, 38, 108, 0.03),
+                var(--12) var(--16) var(--12) 0px rgba(14, 38, 108, 0.11),
+                var(--5) var(--7) var(--9) 0px rgba(14, 38, 108, 0.18),
+                var(--1) var(--2) var(--5) 0px rgba(14, 38, 108, 0.21);
+        }
+    }
+    &__secondary {
+        @extend .btn__primary;
+        background: linear-gradient(90deg, #212769 0%, #212769 100%);
+    }
+    &__outline {
+        @extend .btn__primary;
+        background: transparent;
+        color: #212769;
+        border: var(--1) solid var(--Button-Secondary-Link, #212769);
+        &:hover {
+            background: var(---white-0);
+            box-shadow:
+                var(--34) var(--45) var(--16) 0px rgba(14, 38, 108, 0),
+                var(--22) var(--29) var(--15) 0px rgba(14, 38, 108, 0.03),
+                var(--12) var(--16) var(--12) 0px rgba(14, 38, 108, 0.11),
+                var(--5) var(--7) var(--9) 0px rgba(14, 38, 108, 0.18),
+                var(--1) var(--2) var(--5) 0px rgba(14, 38, 108, 0.21);
+        }
+        img {
+            filter: brightness(0) saturate(100%) invert(14%) sepia(65%) saturate(2124%) hue-rotate(223deg)
+                brightness(83%) contrast(97%);
+        }
+    }
+    &__tertiary {
+        color: var(--Text-Input-Text-Input, #4b4954);
+        img {
+            filter: brightness(0) saturate(100%) invert(28%) sepia(7%) saturate(772%) hue-rotate(211deg) brightness(92%)
+                contrast(89%);
+        }
+        &:hover {
+            color: #212769;
+            img {
+                filter: brightness(0) saturate(100%) invert(14%) sepia(65%) saturate(2124%) hue-rotate(223deg)
+                    brightness(83%) contrast(97%);
+            }
+        }
+    }
+
+    &__disabled {
+        background: var(--Interaction-Disable-BG, #c2c4c6);
+        pointer-events: none;
+        &:hover {
+            background: var(--Interaction-Disable-BG, #c2c4c6);
+            box-shadow: none !important;
+        }
+    }
+
+    img {
+        margin-left: var(--20);
+        display: block;
+        width: var(--24);
+        height: var(--24);
+        object-fit: contain;
+        transition: 0.3s ease;
+    }
+
+    // &:hover {
+    //     color: #212769;
+    //     img {
+    //         filter: brightness(0) saturate(100%) invert(14%) sepia(65%) saturate(2124%) hue-rotate(223deg)
+    //             brightness(83%) contrast(97%);
+    //     }
+    // }
+    &--icon {
+        padding: 0;
+        width: var(--48);
+        height: var(--48);
+        justify-content: center;
+        background: #ffffff;
+        img {
+            margin: 0;
+            width: var(--23);
+            height: var(--23);
+            filter: brightness(0) saturate(100%) invert(78%) sepia(16%) saturate(0%) hue-rotate(168deg) brightness(88%)
+                contrast(79%);
+        }
+        &:hover {
+            background: #63a147;
+            img {
+                filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(3deg)
+                    brightness(100%) contrast(104%);
+            }
+        }
+        &::after {
+            display: none;
+        }
+        &.btn--l {
+            width: var(--48);
+            height: var(--48);
+            img {
+                margin: 0;
+                width: var(--24);
+                height: var(--24);
+            }
+        }
+    }
+    &--icon-outline {
+        @extend .btn--icon;
+        border: var(--1) solid var(---white-0);
+        background: transparent;
+        img {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(3deg) brightness(100%)
+                contrast(104%);
+        }
+        &:hover {
+            background: #fff;
+            box-shadow:
+                var(--34) var(--45) var(--16) 0px rgba(14, 38, 108, 0),
+                var(--22) var(--29) var(--15) 0px rgba(14, 38, 108, 0.03),
+                var(--12) var(--16) var(--12) 0px rgba(14, 38, 108, 0.11),
+                var(--5) var(--7) var(--9) 0px rgba(14, 38, 108, 0.18),
+                var(--1) var(--2) var(--5) 0px rgba(14, 38, 108, 0.21);
+            img {
+                filter: brightness(0) saturate(100%) invert(10%) sepia(53%) saturate(3573%) hue-rotate(230deg)
+                    brightness(102%) contrast(93%);
+            }
+        }
+    }
+}
+
+@media (max-width: 639.98px) {
+    :root {
+        --init-font-size: 4.2667vw;
+    }
+}
+
+.be-vietnam-pro-thin {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.be-vietnam-pro-extralight {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.be-vietnam-pro-light {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.be-vietnam-pro-regular {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.be-vietnam-pro-medium {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.be-vietnam-pro-semibold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.be-vietnam-pro-bold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.be-vietnam-pro-extrabold {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.be-vietnam-pro-black {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.be-vietnam-pro-thin-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.be-vietnam-pro-extralight-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.be-vietnam-pro-light-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.be-vietnam-pro-regular-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.be-vietnam-pro-medium-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.be-vietnam-pro-semibold-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.be-vietnam-pro-bold-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.be-vietnam-pro-extrabold-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.be-vietnam-pro-black-italic {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.heading {
+    h1 {
+        color: #212769;
+        font-size: var(--64);
+        font-weight: 600;
+        line-height: 110%; /* 70.4px */
+        letter-spacing: calc(var(--2) * -1);
+    }
+    h2 {
+        color: var(--Text-Title-Blue-212769, #212769);
+        font-size: var(--50);
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: calc(var(--2) * -1);
+    }
+    h4 {
+        font-size: var(--24);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 33.6px */
+        letter-spacing: calc(var(--1) * -1);
+    }
+    b,
+    strong {
+        font-weight: inherit;
+        background: var(
+            --Gradient-Green-Main,
+            linear-gradient(
+                93deg,
+                #7fb546 -12.23%,
+                #75ae4c 10.09%,
+                #63a056 32.42%,
+                #509161 54.74%,
+                #2d7675 77.07%,
+                #282d93 93.81%
+            )
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.paragraph {
+    color: #4b4954;
+    font-size: var(--18);
+    font-weight: 400;
+    line-height: 170%; /* 30.6px */
+    letter-spacing: -0.045rem;
+}
+
+.sub-heading {
+    width: fit-content;
+    font-size: var(--14);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 16.8px */
+    text-transform: uppercase;
+    background: linear-gradient(
+        71deg,
+        #7fb546 8.81%,
+        #75ae4c 24.48%,
+        #63a056 40.14%,
+        #509161 55.81%,
+        #2d7675 71.48%,
+        #282d93 83.23%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-body {
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: -0.72px;
+    color: var(--Text-Body-Grey, #4b4954);
+    &--14 {
+        font-size: var(--14);
+    }
+    &--16 {
+        font-size: var(--16);
+    }
+    &--18 {
+        font-size: var(--18);
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 88.36619rem;
+    margin: 0 auto;
+}
