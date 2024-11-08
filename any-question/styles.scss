@@ -1,0 +1,81 @@
+.contact-question {
+    position: relative;
+    height: 36.31rem;
+
+    &__bg {
+        &-1 {
+            position: absolute;
+            width: 100%;
+            height: 86.50788rem;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.6;
+        }
+        &-2 {
+            position: absolute;
+            width: auto;
+            height: 100%;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .question-form {
+        position: relative;
+        z-index: 1;
+        width: 38.0625rem;
+        margin-left: 10.13rem;
+        &__title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2d3b92; // Màu chữ cho title
+            margin-bottom: 1rem;
+        }
+
+        &__description {
+            color: var(--Text-Body-Grey, #4b4954);
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 170%; /* 1.9125rem */
+            letter-spacing: -0.01125rem;
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        &__group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__input {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            font-size: 1rem;
+            color: #333;
+            outline: none;
+            transition: border 0.3s ease;
+
+            &:focus {
+                border-color: #2d3b92; // Màu khi input được focus
+            }
+
+            &--email {
+                background-color: #f9f9f9;
+            }
+
+            &--messenger {
+                background-color: #f9f9f9;
+            }
+        }
+
+        &__submit {
+        }
+    }
+}

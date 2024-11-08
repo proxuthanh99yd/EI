@@ -1,0 +1,236 @@
+.study-abroad {
+  padding: 6.71463rem 2.96875rem 2.75rem 3.03125rem;
+  border-radius: 1.25rem;
+  border: 1px solid #ededed;
+  background: #fff;
+  box-shadow: 0px 4px 27.1px 0px rgba(0, 0, 0, 0.03);
+  max-width: 90rem;
+  margin: auto;
+}
+.study-abroad__header {
+  margin-bottom: 2rem;
+}
+.study-abroad__title {
+  text-align: center;
+  margin-top: 0.62rem;
+  margin-bottom: 5.79rem;
+}
+.study-abroad__sub-heading {
+  display: block;
+  margin: auto;
+}
+.study-abroad__destinations {
+  height: 29.4375rem;
+}
+.study-abroad__destinations-pagination {
+  display: none;
+}
+.study-abroad__destination {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(147deg, #7fb546 6.55%, #75ae4c 24.92%, #63a056 43.3%, #509161 61.67%, #2d7675 80.05%, #395994 93.83%);
+  width: 21.8035rem;
+  margin-top: auto;
+}
+.study-abroad__destination:hover .study-abroad__image {
+  scale: 1.3;
+}
+.study-abroad .swiper-slide {
+  display: flex;
+  align-items: end;
+  height: 100%;
+}
+.swiper-slide:nth-child(1) .study-abroad__destination {
+  height: 26.51056rem;
+}
+.swiper-slide:nth-child(2) .study-abroad__destination {
+  height: 22.47938rem;
+  background: linear-gradient(152deg, #7fb546 -15.89%, #75ae4c 3.05%, #63a056 22%, #509161 40.95%, #2d7675 59.89%, #395994 74.1%);
+}
+.swiper-slide:nth-child(3) .study-abroad__destination {
+  height: 29.4375rem;
+  background: linear-gradient(166deg, #7fb546 -7.07%, #75ae4c 6.17%, #63a056 19.4%, #509161 32.63%, #2d7675 45.87%, #395994 55.79%);
+}
+.swiper-slide:nth-child(4) .study-abroad__destination {
+  height: 22.19731rem;
+  background: linear-gradient(143deg, #7fb546 -4%, #75ae4c 16.39%, #63a056 36.79%, #509161 57.19%, #2d7675 77.58%, #395994 92.88%);
+}
+.swiper-slide:nth-child(4) .study-abroad__destination .study-abroad__background-image {
+  width: 100%;
+  height: 100%;
+  top: unset;
+  bottom: 0;
+}
+.swiper-slide:nth-child(4) .study-abroad__destination .study-abroad__country {
+  color: var(--Text-Title-White-Invert, #fff);
+  text-align: center;
+  /* Title/H4/24-M */
+  font-family: "Be Vietnam Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 2.1rem */
+  letter-spacing: -0.0625rem;
+}
+.study-abroad__image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+  transition: 0.8s ease;
+}
+.study-abroad__slide-flag-1 {
+  margin-top: 5.16rem;
+}
+.study-abroad__slide-flag-2 {
+  margin-top: 0.5rem;
+}
+.study-abroad__slide-flag-item {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 0.625rem 0.875rem;
+  align-items: self-start;
+  gap: 0.5625rem;
+  border-radius: var(--10, 0.625rem);
+  border: 0.5px solid #e9eaf7;
+  background: #fff;
+  -webkit-backdrop-filter: blur(3.75px);
+          backdrop-filter: blur(3.75px);
+}
+.study-abroad__slide-flag-item img {
+  width: 2rem;
+  height: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: var(--corner-radius-3xSmall, 0.125rem);
+  background: #fff;
+}
+.study-abroad__slide-flag-item span {
+  color: #100249;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 1.3125rem */
+  letter-spacing: 0.01581rem;
+}
+.study-abroad__country {
+  position: relative;
+  z-index: 1;
+  margin-top: 1.44rem;
+  margin-left: 1.5rem;
+  color: #fff;
+  /* Title/H4/24-semi */
+  font-family: "Be Vietnam Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 2.1rem */
+  letter-spacing: -0.0625rem;
+}
+.study-abroad__country-btn {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.25rem;
+  margin-left: 4.66rem;
+}
+.study-abroad__flag {
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+.study-abroad__flag-overlay {
+  display: block;
+  width: 5.4375rem;
+  height: 4.125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.study-abroad__flag-image {
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -10%);
+  position: absolute;
+  width: 2rem;
+  height: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.study-abroad__line {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 1.84rem;
+}
+.study-abroad__background-image {
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 11.87175rem;
+  height: 11.89088rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.study-abroad__background-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.study-abroad [dir=rtl] .study-abroad__slide-flag-item {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 639.98px) {
+  .study-abroad {
+    padding: 3.63rem 0 2.63rem 1rem;
+    background: #f9fbfd;
+    box-shadow: none;
+    border-radius: unset;
+    border: none;
+  }
+  .study-abroad__header h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    line-height: 120%; /* 2.4rem */
+    letter-spacing: -0.125rem;
+  }
+  .study-abroad__sub-heading {
+    font-size: 0.75rem;
+    line-height: 120%; /* 0.9rem */
+  }
+  .study-abroad__destinations {
+    height: 26rem !important;
+  }
+  .study-abroad__destinations-pagination {
+    display: block;
+    margin-top: 2.5rem;
+    position: relative;
+    --swiper-pagination-bullet-size: 0.5rem;
+    --swiper-pagination-color: #65a255;
+    --swiper-pagination-bullet-inactive-color: #2d5824;
+    --swiper-pagination-bullet-inactive-opacity: 0.4;
+  }
+  .swiper-slide .study-abroad__destination {
+    height: 26rem !important;
+  }
+  .study-abroad__country {
+    margin-top: 1.75rem;
+    margin-left: 1.12rem;
+    font-size: 1.25rem;
+    line-height: 120%; /* 1.5rem */
+    letter-spacing: -0.0625rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

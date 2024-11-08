@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../assets/stylesheet.css" />
+        <link rel="stylesheet" href="../assets/reset.css" />
+        <link rel="stylesheet" href="../assets/global.css" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Document</title>
+    </head>
+    <body style="padding: 100rem 0 100rem">
+        <section class="get-started">
+            <div class="get-started__background">
+                <!-- <img src="../assets/image/Banner Home OP2.png" alt="" /> -->
+                <img src="../assets/image/Banner Home OP2-mb.png" alt="" />
+            </div>
+            <div class="get-started__content">
+                <div class="get-started__sub-heading">
+                    It's time <img src="../assets/image/clock.svg" alt="" />
+                </div>
+                <h2 class="get-started__title">to turn dreams</h2>
+                <p class="get-started__description">
+                    into reality with EI Group!
+                </p>
+                <a class="btn btn__primary btn--l get-started__btn" href="">
+                    Get started now
+                    <img src="../assets/image/Chevron_Right_MD.svg" alt="" />
+                </a>
+            </div>
+            <div class="get-started__images">
+                <img
+                    class="get-started__images-frame get-started__images-frame--1"
+                    src="../assets/image/2ab3f82b8b9ed42e124260b526242168.png"
+                    alt=""
+                />
+                <img
+                    class="get-started__images-frame get-started__images-frame--2"
+                    src="../assets/image/05ccb336ea5b88172b2c19cd14f31105.png"
+                    alt=""
+                />
+                <!-- <img
+                    class="get-started__images-frame get-started__images-frame--3"
+                    src="../assets/image/tera.png"
+                    alt=""
+                /> -->
+                <img
+                    class="get-started__images-frame get-started__images-frame--3"
+                    src="../assets/image/tera-mb.png"
+                    alt=""
+                />
+                <img
+                    class="get-started__images-frame get-started__images-frame--4"
+                    src="../assets/image/b0ffd99446e495af92d739a25f0734a3.png"
+                    alt=""
+                />
+                <img
+                    class="get-started__images-frame get-started__images-frame--5"
+                    src="../assets/image/boy-frame.png"
+                    alt=""
+                />
+                <img
+                    class="get-started__images-frame get-started__images-frame--6"
+                    src="../assets/image/girl-frame.png"
+                    alt=""
+                />
+                <img
+                    class="get-started__images-frame get-started__images-frame--7"
+                    src="../assets/image/marker-frame.svg"
+                    alt=""
+                />
+            </div>
+        </section>
+        <script>
+            // const section = document.querySelector(".get-started");
+            const section = null;
+            const observer = new IntersectionObserver(
+                function (entries, observer) {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            section
+                                .querySelector(".get-started__content")
+                                .classList.add("active");
+                            section
+                                .querySelector(".get-started__images")
+                                .classList.add("active");
+
+                            // console.log("Section is in the viewport");
+                        } else {
+                            section
+                                .querySelector(".get-started__content")
+                                .classList.remove("active");
+                            section
+                                .querySelector(".get-started__images")
+                                .classList.remove("active");
+                            // console.log("Section is not in the viewport");
+                        }
+                    });
+                },
+                {
+                    rootMargin: "0px 0px -40% 0px", // Đặt khoảng cách 100px từ dưới của viewport
+                }
+            );
+
+            if (section) {
+                observer.observe(section);
+            } else {
+                console.log("Section not found");
+            }
+        </script>
+    </body>
+</html>

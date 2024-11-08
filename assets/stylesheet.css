@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fz Photograph';
+    src: url('FzPhotograph.woff2') format('woff2'),
+        url('FzPhotograph.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

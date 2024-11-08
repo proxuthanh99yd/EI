@@ -1,0 +1,197 @@
+.latest-articles {
+  padding: 6.66rem 0 0;
+  max-width: 89.9rem;
+  margin: auto;
+}
+.latest-articles__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.62rem;
+  margin-bottom: 3.44rem;
+}
+.latest-articles__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b2e4a;
+}
+.latest-articles__see-all {
+  color: var(--Primary-Color-Blue-blue-900, #152233);
+  border: 1.364px solid var(--Stroke---Divider-Thin---Background---Default, #d8dde6);
+}
+.latest-articles__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.38rem;
+}
+.latest-articles__item {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 27.75rem;
+  border-radius: var(--10, 0.625rem);
+  background: #fff;
+  /* shadow/1 */
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
+}
+.latest-articles__image {
+  width: 100%;
+  height: 14.4175rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.latest-articles__content {
+  flex: 1;
+  padding: 2.15rem 1.5rem 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.latest-articles__meta {
+  display: flex;
+  font-size: 0.875rem;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+.latest-articles__meta svg {
+  display: inline-block;
+  margin: 0 0.69rem;
+}
+.latest-articles__category {
+  color: var(--Text-Sub-Green, #63a147);
+  font-weight: 600;
+}
+.latest-articles__category + svg {
+  width: 0.25669rem;
+  height: 0.25669rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.latest-articles__author {
+  color: var(--Text-Sub-Grey, #88888e);
+  font-weight: 400;
+}
+.latest-articles__heading {
+  color: var(--Text-Title-Blue-212769, #212769);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 120%; /* 1.5rem */
+  letter-spacing: -0.025rem;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 1.5rem;
+}
+.latest-articles__footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.latest-articles__date {
+  color: var(--Text-Sub-Grey, #88888e);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 120%; /* 1.05rem */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.latest-articles__date img {
+  margin-right: 0.5rem;
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.latest-articles__read-more {
+  position: absolute;
+  top: -1.228rem;
+  right: 2.56rem;
+  width: 3.6875rem;
+  height: 3.6875rem;
+  border-radius: 2.5rem;
+  box-shadow: 0px 4px 10.1px 0px rgba(18, 27, 140, 0.23);
+  padding: 1.125rem 1.125rem 1.0625rem 1.0625rem;
+}
+.latest-articles__read-more::after {
+  display: none;
+}
+.latest-articles__read-more img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 639.98px) {
+  .latest-articles {
+    padding: 3.18rem 1rem 6rem;
+    position: relative;
+  }
+  .latest-articles__header {
+    margin-top: 0.62rem;
+    margin-bottom: 1.5rem;
+  }
+  .latest-articles__sub-heading {
+    font-size: 0.75rem;
+    line-height: 120%; /* 0.9rem */
+    text-transform: uppercase;
+  }
+  .latest-articles__title h2 {
+    font-size: 2rem;
+    line-height: 120%; /* 2.4rem */
+    letter-spacing: -0.125rem;
+  }
+  .latest-articles__see-all {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 0.875rem;
+    letter-spacing: -0.00875rem;
+    text-transform: capitalize;
+    padding: 0.75rem 1rem 0.75rem 1.5rem;
+  }
+  .latest-articles__list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .latest-articles__item {
+    padding: 0.625rem;
+    height: 25rem;
+    border-radius: var(--10, 0.625rem);
+    background: #fff;
+    /* Shadow */
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.07);
+  }
+  .latest-articles__image {
+    border-radius: 0.5rem;
+    height: 12.3125rem;
+  }
+  .latest-articles__content {
+    padding: 1rem 0.38rem 1.69rem;
+  }
+  .latest-articles__meta {
+    margin-bottom: 0.47rem;
+  }
+  .latest-articles__category {
+    font-size: 0.75rem;
+    letter-spacing: -0.015rem;
+    text-transform: initial;
+  }
+  .latest-articles__author {
+    font-size: 0.75rem;
+    letter-spacing: -0.015rem;
+    text-transform: initial;
+  }
+  .latest-articles__heading {
+    font-size: 1rem;
+    line-height: 120%; /* 1.2rem */
+    letter-spacing: -0.04rem;
+  }
+  .latest-articles__footer {
+    margin-top: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

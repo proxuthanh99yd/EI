@@ -1,0 +1,306 @@
+.case-study {
+    padding: 5rem;
+    position: relative;
+    &__background {
+        position: absolute;
+        width: 32.67063rem;
+        height: 32.67063rem;
+        border-radius: 32.67063rem;
+        border: 52px solid #ecf9f74f;
+        top: -8.69rem;
+        right: -10.65rem;
+    }
+    &__header {
+        text-align: center;
+    }
+
+    &__subtitle {
+        width: 100%;
+        margin-bottom: 0.62rem;
+    }
+
+    &__title {
+        margin-bottom: 3.09rem;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 90rem;
+        height: 35.875rem;
+        border-radius: 1.25rem;
+        background: linear-gradient(110deg, #7fb546 -60.33%, #cdefb5 -16.36%, #3d9948 20.66%, #053183 101.65%);
+        margin: auto;
+        padding: 5.13rem 4.38rem 3rem;
+        &-background {
+            position: absolute;
+            bottom: 0;
+            left: 1.29rem;
+            width: 36.46194rem;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .swiper__case-study__info {
+            max-width: 40.543rem;
+            margin-left: 0;
+            .case-study__info {
+            }
+            &-pagination {
+                position: absolute;
+                .swiper-pagination-bullet {
+                    transition: 0.3s ease;
+                }
+                --swiper-pagination-bottom: 0;
+                --swiper-pagination-bullet-border-radius: 0.25rem;
+                --swiper-pagination-bullet-width: 2.86213rem;
+                --swiper-pagination-bullet-height: var(--6, 0.375rem);
+                --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 0.27);
+                --swiper-pagination-bullet-inactive-opacity: 1;
+                --swiper-pagination-color: #fff;
+            }
+        }
+        .swiper__case-study__image {
+            margin-right: 0;
+            max-width: 36.43213rem;
+            max-height: 26.47269rem;
+            border-radius: var(--10, 0.625rem);
+            .case-study__image {
+                height: 100%;
+                img {
+                    border-radius: var(--10, 0.625rem);
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__headline {
+        color: #fff;
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 130%; /* 2.925rem */
+        letter-spacing: -0.0675rem;
+    }
+
+    &__description {
+        color: var(--text-body-white-80-invert, rgba(255, 255, 255, 0.8));
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 170%; /* 1.9125rem */
+        letter-spacing: -0.01125rem;
+        margin: 1.5rem 0 1.78rem;
+    }
+
+    &__achievement {
+        color: var(--Text-Title-White-Invert, #fff);
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 120%; /* 1.2rem */
+        letter-spacing: -0.01rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 1.09rem;
+    }
+
+    &__link {
+        margin-top: 4.13rem;
+    }
+
+    &__image {
+    }
+
+    &__pagination {
+        &-dot {
+            &--active {
+                background-color: #45a049;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639.98px) {
+    .case-study {
+        padding: 0;
+        padding-top: 3rem;
+        &__background {
+            width: 21.3125rem;
+            height: 21.3125rem;
+            transform: rotate(-92.686deg);
+            border-radius: 21.3125rem;
+            border: 76.324px solid #ecf9f7;
+            top: -3.31rem;
+            right: -10.65rem;
+        }
+        &__header {
+            position: relative;
+        }
+
+        &__subtitle {
+            font-size: 0.75rem;
+            line-height: 120%; /* 0.9rem */
+            text-transform: uppercase;
+        }
+
+        &__title {
+            margin-bottom: 2rem;
+            h2 {
+                font-size: 2rem;
+                line-height: 120%; /* 2.4rem */
+                letter-spacing: -0.125rem;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            flex-direction: column-reverse;
+            padding: 0;
+            height: 30rem;
+            border-radius: var(--10, 0.625rem);
+            background: transparent;
+            &-background {
+                width: 29.80219rem;
+                height: 29.82531rem;
+                transform: rotate(-7.76deg);
+                top: 20rem;
+                bottom: unset;
+                left: -11.94rem;
+                img {
+                }
+            }
+            .swiper__case-study__info {
+                max-width: 100%;
+                .case-study__info {
+                    position: relative;
+                    overflow: hidden;
+                    padding: 2.31rem 1.12rem;
+                    padding-right: 0.8rem;
+                    border-radius: var(--10, 0.625rem);
+                    background: linear-gradient(
+                        112deg,
+                        #7fb546 -62.73%,
+                        #cdefb5 -18.82%,
+                        #3d9948 18.16%,
+                        #053183 99.06%
+                    );
+                    .case-study__image {
+                        margin: auto;
+                        width: 4.1875rem;
+                        height: 4.1875rem;
+                        border-radius: 12.5rem;
+                        border: 3px solid rgba(255, 255, 255, 0.3);
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                &-pagination {
+                    .swiper-pagination-bullet {
+                    }
+                }
+            }
+            .swiper__case-study__image {
+                display: none;
+                max-height: 100%;
+                max-width: 100%;
+                .case-study__image {
+                    width: 4.1875rem;
+                    height: 4.1875rem;
+                    border-radius: 12.5rem;
+                    border: 3px solid rgba(255, 255, 255, 0.3);
+                    overflow: hidden;
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        &__info {
+        }
+
+        &__headline {
+            text-align: center;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%; /* 1.8rem */
+            letter-spacing: -0.0625rem;
+            margin-top: 1rem;
+        }
+
+        &__description {
+            color: var(--text-body-white-80-invert, rgba(255, 255, 255, 0.8));
+            text-align: center;
+            font-size: 0.875rem;
+            line-height: 150%; /* 1.3125rem */
+            letter-spacing: -0.0175rem;
+            margin: 0.75rem 0 1rem;
+        }
+
+        &__achievement {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 150%; /* 1.3125rem */
+            letter-spacing: -0.0175rem;
+            padding-bottom: 0;
+            border: none;
+            img {
+                width: 2.1rem;
+                height: auto;
+                object-fit: contain;
+                margin-right: 0.5rem;
+            }
+        }
+
+        &__link {
+            margin: auto;
+            margin-top: 1.25rem;
+            padding: 1.13rem 1.2rem 1.13rem 2.1875rem;
+            border-radius: 3.1875rem;
+            border: 1px solid #e6e6e6;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: -0.00875rem;
+            text-transform: capitalize;
+        }
+
+        &__image {
+        }
+
+        &__pagination {
+            position: relative;
+            margin-top: 2.5rem;
+            .swiper__case-study__info-pagination {
+                text-align: center;
+                position: absolute;
+                --swiper-pagination-bottom: 0;
+                --swiper-pagination-bullet-border-radius: 0.25rem;
+                --swiper-pagination-bullet-width: 2.86213rem;
+                --swiper-pagination-bullet-height: var(--6, 0.375rem);
+                --swiper-pagination-bullet-inactive-color: rgba(98, 97, 97, 0.27);
+                --swiper-pagination-bullet-inactive-opacity: 1;
+                --swiper-pagination-color: #212769;
+                & .swiper-pagination-bullet {
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+}
