@@ -1,0 +1,54 @@
+<!-- SVG 1 -->
+<svg
+    id="svg1"
+    xmlns="http://www.w3.org/2000/svg"
+    width="188"
+    height="85"
+    viewBox="0 0 188 85"
+    fill="none"
+>
+    <!-- Your SVG 1 content -->
+</svg>
+
+<!-- SVG 2 (hidden initially) -->
+<svg
+    id="svg2"
+    xmlns="http://www.w3.org/2000/svg"
+    width="196"
+    height="89"
+    viewBox="0 0 196 89"
+    fill="none"
+    style="display: none"
+>
+    <!-- Your SVG 2 content -->
+</svg>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+<script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+
+<script>
+    // Define the GSAP timeline for smooth transition
+    const tl = gsap.timeline({ repeat: 0 });
+
+    // Target specific path data in each SVG for smooth transition
+    tl.to("#svg1 path", {
+        morphSVG: "#svg2 path", // morph to path in SVG 2
+        duration: 1.5,
+        ease: "power2.inOut",
+    })
+        .to(
+            "#svg1 linearGradient stop",
+            {
+                attr: { "stop-color": "#A5E7AE" }, // animate gradient color change
+                duration: 1.5,
+                ease: "power2.inOut",
+            },
+            "<"
+        ) // sync gradient animation with morph
+        .to("#svg1", {
+            autoAlpha: 0, // fade out SVG 1 after morph
+            duration: 0.5,
+            onComplete: () =>
+                (document.getElementById("svg2").style.display = "block"), // show SVG 2 after transition
+        });
+</script>

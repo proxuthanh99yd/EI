@@ -1,0 +1,13 @@
+{
+    "type": "submit",
+    "basetype": "submit",
+    "raw_name": "",
+    "name": "",
+    "options": [],
+    "raw_values": ["Submit"],
+    "values": ["Submit"],
+    "pipes": {},
+    "labels": ["Submit"],
+    "attr": "",
+    "content": ""
+}

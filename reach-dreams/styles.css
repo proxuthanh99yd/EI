@@ -1,0 +1,432 @@
+.reach-dreams__wrapper {
+  padding: 3.73rem 0 0;
+  background: linear-gradient(180deg, #f2fcfa 0%, #f2fcfa 28.32%, #f9fbfd 56.64%, #f5fafa 84.96%, #fdfdfd 113.28%);
+}
+
+.reach-dreams {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90rem;
+  margin: auto;
+  padding-bottom: 5.2rem;
+  overflow: hidden;
+}
+.reach-dreams__content {
+  max-width: 34.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.reach-dreams__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+.reach-dreams__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: auto;
+}
+.reach-dreams__info {
+  margin-top: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+.reach-dreams__info-item {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  color: rgba(82, 82, 82, 0.8);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.0625rem;
+}
+.reach-dreams__info-item strong {
+  font-weight: 700;
+  color: #525252;
+  margin-right: 0.35rem;
+}
+.reach-dreams__info-icon {
+  width: 3.86731rem;
+  height: 3.86731rem;
+  border-radius: var(--10, 0.625rem);
+  border: 4.583px solid var(--Primary-Color-Green-green-100, #cfe2c6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.31rem;
+}
+.reach-dreams__info-icon img {
+  width: 2.00525rem;
+  height: 2.00525rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.reach-dreams__map-wrapper {
+  margin-top: 4.41rem;
+  width: 55.48081rem;
+  height: 26.06981rem;
+  position: relative;
+}
+.reach-dreams__map > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.reach-dreams__location {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  border-radius: 50%;
+  width: 5.34663rem;
+  height: 5.34663rem;
+  cursor: pointer;
+}
+.reach-dreams__location::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  background: rgba(40, 185, 18, 0.4);
+  position: absolute;
+  width: 3.68013rem;
+  height: 3.68013rem;
+  visibility: hidden;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.reach-dreams__location::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  background: rgba(40, 185, 18, 0.39);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 0.794rem;
+  height: 0.794rem;
+  animation: pulse-size 2s infinite;
+  transition: 0.3s ease-in-out;
+}
+.reach-dreams__location:hover::after {
+  width: 3.68013rem;
+  height: 3.68013rem;
+  background: rgba(59, 75, 56, 0.3);
+  animation: none;
+}
+.reach-dreams__location:hover::before {
+  width: 5.34663rem;
+  height: 5.34663rem;
+  visibility: visible;
+  opacity: 1;
+}
+.reach-dreams__location-flag {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 2.21413rem;
+  height: 2.21413rem;
+  border-radius: 2.21413rem;
+  border: 5.024px solid #fff;
+  background: #fff;
+}
+.reach-dreams__location-flag img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2.21413rem;
+}
+.reach-dreams__location-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.65rem 1.24rem 0.9rem 1.88rem;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.45rem;
+  z-index: 1;
+  width: 13.30844rem;
+  height: 3.98325rem;
+  background: #fff;
+  filter: drop-shadow(0px 2.131px 13.584px rgba(0, 0, 0, 0.05));
+  transform: translateY(calc(-50% - 0.65rem));
+}
+.reach-dreams__location-info::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 0;
+  height: 0;
+  --border-width: 0.75rem;
+  border-left: var(--border-width) solid transparent;
+  border-right: var(--border-width) solid transparent;
+  border-top: var(--border-width) solid #fff;
+}
+.reach-dreams__location-country {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.19556rem;
+  font-weight: 700;
+  background: var(--Gradient-Green-Main, linear-gradient(93deg, #7fb546 -12.23%, #75ae4c 10.09%, #63a056 32.42%, #509161 54.74%, #2d7675 77.07%, #282d93 93.81%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.reach-dreams__location-offices {
+  flex-basis: 60%;
+  color: #bfbfbf;
+  font-size: 0.69744rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.04881rem;
+}
+.reach-dreams__location-link {
+  margin-left: auto;
+  border: transparent;
+  color: #28387e;
+  font-size: 0.59781rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.71438rem; /* 119.5% */
+  letter-spacing: 0.01431rem;
+  padding: 0;
+}
+.reach-dreams__location-link img {
+  width: 0.71438rem;
+  height: 0.71438rem;
+  margin-left: 0.2rem;
+}
+.reach-dreams__location-link:hover {
+  background: unset;
+  box-shadow: none;
+}
+.reach-dreams__location:hover .reach-dreams__location-info {
+  opacity: 1;
+  visibility: visible;
+}
+.reach-dreams__location-point {
+  position: relative;
+  border-radius: 50%;
+  background: #28b912;
+  z-index: 1;
+  animation: point-pulse-size 2s infinite;
+}
+.reach-dreams__location:hover .reach-dreams__location-point {
+  width: 1.24988rem;
+  height: 1.24988rem;
+  animation: none;
+}
+.reach-dreams__location--south-us {
+  left: 1.9%;
+  top: 25%;
+}
+.reach-dreams__location--south-us::after {
+  animation-delay: 0.2s;
+}
+.reach-dreams__location--ca {
+  left: 15%;
+  top: 40%;
+}
+.reach-dreams__location--ca::after {
+  animation-delay: 0.3s;
+}
+.reach-dreams__location--ar {
+  left: 28%;
+  top: 95%;
+}
+.reach-dreams__location--ar::after {
+  animation-delay: 0.7s;
+}
+.reach-dreams__location--gr {
+  left: 53%;
+  top: 43%;
+}
+.reach-dreams__location--gr::after {
+  animation-delay: 1.9s;
+}
+.reach-dreams__location--vn {
+  left: 76%;
+  top: 59%;
+}
+.reach-dreams__location--vn::after {
+  animation-delay: 1.1s;
+}
+.reach-dreams__location--at {
+  left: 88%;
+  top: 88%;
+}
+.reach-dreams__location--at::after {
+  animation-delay: 1.8s;
+}
+.reach-dreams__location--ru-1 {
+  left: 82%;
+  top: 26%;
+}
+.reach-dreams__location--ru-1::after {
+  animation-delay: 0.7s;
+}
+.reach-dreams__location--ru-2 {
+  left: 94.4%;
+  top: 27%;
+}
+.reach-dreams__location--ru-2::after {
+  animation-delay: 1.4s;
+}
+.reach-dreams__swiper {
+  padding: 4.92rem 0 4.46rem;
+}
+.reach-dreams__swiper .swiper-slide {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.reach-dreams__swiper-item {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reach-dreams__swiper-item img {
+  height: 3.13rem;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@keyframes pulse-size {
+  0% {
+    width: 0.794rem;
+    height: 0.794rem;
+  }
+  50% {
+    width: 3.68013rem;
+    height: 3.68013rem;
+  }
+  100% {
+    width: 0.794rem;
+    height: 0.794rem;
+  }
+}
+@keyframes point-pulse-size {
+  0% {
+    width: 0.794rem;
+    height: 0.794rem;
+  }
+  50% {
+    width: 1.24988rem;
+    height: 1.24988rem;
+  }
+  100% {
+    width: 0.794rem;
+    height: 0.794rem;
+  }
+}
+
+@media (max-width: 639.98px) {
+  .reach-dreams__wrapper {
+    padding: 1.38rem 0 0 0;
+  }
+  .reach-dreams {
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+  }
+  .reach-dreams__content {
+    max-width: 100%;
+  }
+  .reach-dreams__title h2 {
+    font-size: 2rem;
+    line-height: 120%; /* 2.4rem */
+    letter-spacing: -0.125rem;
+  }
+  .reach-dreams__description {
+    font-size: 1rem;
+    line-height: 150%; /* 1.5rem */
+    letter-spacing: -0.02rem;
+  }
+  .reach-dreams__info {
+    margin-top: 2rem;
+  }
+  .reach-dreams__info-item {
+    font-size: 1.125rem;
+    line-height: 120%; /* 1.35rem */
+    letter-spacing: -0.0625rem;
+  }
+  .reach-dreams__info-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.404rem;
+    border-width: 2.963px;
+    padding: 0.6rem;
+  }
+  .reach-dreams__info-icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .reach-dreams__map-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0 1.25rem 0 0.25rem;
+    margin-top: 0.75rem;
+  }
+  .reach-dreams__map {
+    position: relative;
+  }
+  .reach-dreams__swiper {
+    padding: 2.37rem 0 2.41rem;
+  }
+  .reach-dreams__swiper-item img {
+    height: 2.09rem;
+  }
+  @keyframes pulse-size {
+    0% {
+      width: 0.39213rem;
+      height: 0.39213rem;
+    }
+    50% {
+      width: 0.39213rem;
+      height: 0.39213rem;
+    }
+    100% {
+      width: 0.39213rem;
+      height: 0.39213rem;
+    }
+  }
+  @keyframes point-pulse-size {
+    0% {
+      width: 0.39213rem;
+      height: 0.39213rem;
+    }
+    50% {
+      width: 0.39213rem;
+      height: 0.39213rem;
+    }
+    100% {
+      width: 0.39213rem;
+      height: 0.39213rem;
+    }
+  }
+}/*# sourceMappingURL=styles.css.map */

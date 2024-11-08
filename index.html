@@ -11,6 +11,75 @@
         <link rel="stylesheet" href="./assets/global.css" />
         <title>Document</title>
     </head>
+    <style>
+        .slider {
+            padding-block: 12px;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .list {
+            display: flex;
+            width: calc(
+                var(--width) * var(--imageQuantity) * 2
+            ); /* Double the width for seamless looping */
+            gap: calc(var(--width) / 4);
+            animation: autoScroll 20s linear infinite;
+        }
+
+        .list:hover {
+            animation-play-state: paused !important;
+        }
+
+        .item {
+            width: var(--width);
+            height: var(--height);
+            flex-shrink: 0;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            transition: filter 0.5s ease-in-out;
+        }
+
+        @keyframes autoScroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(
+                    calc(-1 * var(--width) * var(--imageQuantity))
+                );
+            }
+        }
+
+        .slider[reverse="true"] .list {
+            animation: reverseScroll 20s linear infinite;
+        }
+
+        @keyframes reverseScroll {
+            0% {
+                transform: translateX(
+                    calc(-1 * var(--width) * var(--imageQuantity))
+                );
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* .slider:hover .item img {
+            filter: grayscale(1);
+        }
+
+        .slider .item:hover img {
+            filter: grayscale(0);
+        } */
+    </style>
     <body style="background: #eee">
         <a class="btn btn__primary" href="#">
             Explore now
@@ -75,5 +144,190 @@
             successful journeys around the world.
         </p>
         <div class="sub-heading">case study</div>
+        <!-- slider 1 -->
+        <div
+            class="slider"
+            style="--width: 150px; --height: 50px; --imageQuantity: 10"
+        >
+            <div class="list">
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_1.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_2.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_3.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_4.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_5.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_6.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_7.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_8.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_9.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_10.png"
+                        alt=""
+                    />
+                </div>
+                <!-- Duplicate items for seamless looping -->
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_1.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_2.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_3.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_4.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_5.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_6.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_7.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_8.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_9.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider1_10.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- slider 2 -->
+        <div
+            class="slider"
+            reverse="true"
+            style="--width: 200px; --height: 200px; --imageQuantity: 7"
+        >
+            <div class="list">
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider2_1.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider2_2.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider2_3.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider2_4.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider2_5.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider2_6.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/auto_slider/images/slider2_7.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+        <script>
+            const copy = document.querySelector(".list").cloneNode(true);
+            document.querySelector(".slider").appendChild(copy);
+        </script>
     </body>
 </html>
